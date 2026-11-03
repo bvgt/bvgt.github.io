@@ -48,7 +48,7 @@
   <li>No account and no sign-in.</li>
   <li>Your progress and settings stay on your device. We run no servers of our own.</li>
   <li>The app shows ads from Google AdMob. Google collects some data to show and measure those ads, as described below.</li>
-  <li>We use no analytics service: we receive no data about how you play.</li>
+  <li>We use Google Analytics for Firebase to see how the game is played. It never reads your advertising ID, and where the law requires consent, it only runs if you agree.</li>
   <li>Garden Pass is an optional one-time purchase through Google Play. We never see your payment details.</li>
 </ul>
 <h2>Data kept on your device</h2>
@@ -64,6 +64,15 @@
 <p>Google uses this data for advertising, analytics and fraud prevention. It is encrypted in transit. In the European Economic Area, the United Kingdom and Switzerland, the app asks for your consent before ads are personalised; you can change your choice at any time in <strong>Settings (the gear button on the home screen) → Privacy options</strong>. Your consent choice is stored on your device.</p>
 <p>You can reset or delete your advertising ID in your Android settings (Settings → Privacy → Ads, or Settings → Google → Ads, depending on the device). Learn more in <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 <p>The game is fully playable without an internet connection; ads simply don’t load then.</p>
+<h2>Analytics (Google Analytics for Firebase)</h2>
+<p>To learn how the game is played and make it better (for example, which battles are too hard, whether the tutorial is clear, and how many players come back), the app uses Google Analytics for Firebase. It sends Google:</p>
+<ul>
+  <li>game events we chose: battles started, won or lost (with the battle, turn, stars and crops left), restarts, Rewinds and hints, tutorial steps, daily battle results and streak, shares, which ads were shown, Garden Pass offers and purchase attempts, your daily reminder choice, and whether you own Garden Pass;</li>
+  <li>events Google Analytics collects by itself: the first launch, sessions and time spent in the app, app updates, and in-app purchases (product ID, name and price);</li>
+  <li>an app-instance ID that Google Analytics creates for this installation of the app, information about the device and the app (such as device model, Android version, app version and language), and an approximate location derived from your IP address, which Google masks.</li>
+</ul>
+<p>It never reads your advertising ID, and none of this is linked to your name, email address or Google account. We use it only to understand and improve the game, not for advertising. It is encrypted in transit, and Google keeps it for the retention period set in Google Analytics.</p>
+<p>In the European Economic Area, the United Kingdom and Switzerland, analytics only runs if you agree, in the consent form, to the storing of and access to information on your device; you can change this at any time in <strong>Settings → Privacy options</strong>. Nothing is sent before the app has checked whether your consent is needed.</p>
 <h2>Garden Pass (in-app purchase)</h2>
 <p>Garden Pass is a one-time purchase that opens gardens 4 to 6, gives unlimited Rewinds and hints, and turns off all ads. Google Play handles the payment, so we never receive your card or payment details. The app only learns from Google Play whether you own Garden Pass, keeps that on your device, and checks it again with Google Play when it starts. The <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&ldt=privacynotice">Google Payments Privacy Notice</a> covers the payment itself.</p>
 <h2>Daily reminder</h2>
@@ -77,16 +86,17 @@
   <li><strong>Vibration</strong> – for the game’s vibration effects, which you can turn off in Settings, and so the reminder notification can vibrate.</li>
   <li><strong>Google Play billing</strong> – for the optional Garden Pass purchase.</li>
 </ul>
-<p>These come with Google’s Mobile Ads SDK and the libraries it uses:</p>
+<p>These come with Google’s Mobile Ads SDK, Google Analytics for Firebase and the libraries they use:</p>
 <ul>
-  <li><strong>Internet</strong> and <strong>network state</strong> – to load ads.</li>
+  <li><strong>Internet</strong> and <strong>network state</strong> – to load ads and send analytics.</li>
   <li><strong>Advertising ID</strong> and <strong>ad services</strong> – for ad measurement, as described above.</li>
-  <li><strong>Wake lock</strong> and <strong>foreground service</strong> – for the SDK’s short background tasks.</li>
+  <li><strong>Install referrer</strong> – so Google Analytics can tell whether the app was installed from its Google Play page or from a campaign.</li>
+  <li><strong>Wake lock</strong> and <strong>foreground service</strong> – for the SDKs’ short background tasks.</li>
 </ul>
 <h2>Children</h2>
 <p>The app is not directed at children under 13, and we do not knowingly collect personal information from them.</p>
 <h2>Your choices and rights</h2>
-<p>We hold no account, contact or usage data about you. To remove the data on your device, uninstall the app or clear its data. For data collected by Google for ads, use the controls above or contact Google.</p>
+<p>We hold no account or contact data about you. The analytics data described above is tied to an app-instance ID, not to your name or account, so we cannot identify you in it. To remove the data on your device, uninstall the app or clear its data. For data collected by Google for ads and analytics, use the controls above or contact Google.</p>
 <h2>Changes</h2>
 <p>If this policy changes, we will update this page and its effective date.</p>
 <h2>Contact</h2>
